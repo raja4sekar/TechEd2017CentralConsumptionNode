@@ -1,0 +1,36 @@
+{
+	"dependencies": {
+		"@sap/xssec": "1.1.1",
+		"@sap/xsenv": "1.2.7",
+		"@sap/xsjs": "1.14.1",
+		"@sap/hdbext": "4.3.4",
+		"@sap/textbundle": "latest",
+		"@sap/logging": "~3.0",
+		"@sap/audit-logging": "2.0.1",
+		"express": "~4.15",
+		"passport": "~0.3.2",
+		"async": "latest",
+		"accept-language-parser": "latest",
+		"node-xlsx": "~0.7.4",
+		"node-zip": "~1.1.1",
+		"xmldoc": "~1.1.0",
+		"winston": "~2.3",
+		"body-parser": "~1.17",
+		"elementtree": "latest"
+	},
+	"description": "Node.js/XSJS example of central DB container consumption",
+	"devDependencies": {
+		"@sap/xsjs-test": "2.0.2"
+	},
+	"files": [],
+	"main": "server.js",
+	"name": "js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "node testrun.js"
+	},
+	"engines": {
+		"node": "6.x"
+	},
+	"version": "1.0.0"
+}

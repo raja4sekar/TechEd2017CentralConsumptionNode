@@ -1,0 +1,23 @@
+ID: TechEd2017CentralConsumptionNode
+_schema-version: '2.0'
+description: TechEd 2017 Central DB Consumption from Node.js/XSJS example
+version: 1.0.2017
+
+modules:
+ - name: js
+   type: nodejs
+   path: js
+   provides:
+    - name: js_api
+      properties:
+         url: ${default-url}
+   requires:
+    - name: CentralDB
+    
+resources:
+ - name: CentralDB
+   type: org.cloudfoundry.existing-service
+   parameters:
+     service-name: teched-2017-container
+   properties:
+     central-db-name: '${service-name}'
